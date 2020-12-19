@@ -57,7 +57,7 @@ jobs:
           command: rustup component add rustfmt
       - run:
           name: Run fmt
-          command: cargo fmt -- check
+          command: cargo fmt -- --check
       - run:
           name: Audit
           command: cargo audit
